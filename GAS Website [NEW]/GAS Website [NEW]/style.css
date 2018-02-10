@@ -1,0 +1,627 @@
+
+
+.light-header {
+  color: rgb(214, 214, 214);
+  word-spacing: 360px;
+  margin-top: -70px;
+}
+
+.subheader2 {
+  color: black;
+  font-size: 25pt;
+  margin-top: -32px;
+  font-size: 18pt;
+}
+
+h5 {
+  position: absolute;
+  margin-left: 117px;
+  font-family: lato;
+}
+
+.background-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -5;
+	min-width: 100vw;
+	min-height: 100vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  opacity: 0;
+  
+  animation-name: video;
+  animation-duration: 4s;
+  animation-delay: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.rule1 {
+  width: 4px;
+  height: 101px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 400px;
+  display:inline-block;
+}
+
+.rule2 {
+  width: 4px;
+  height: 101px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 85px;
+  float: left;
+  display: block;
+}
+
+
+@keyframes video {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu {
+  display: block;
+  color: black;
+  padding-bottom: 160px;
+}
+
+.presented {
+  display: block;
+  color: white;
+  font-family: lato;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+.blackbox {
+  align-content: center;
+	width: 0px;
+	height: 675px;
+	background-color: black;
+  color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	box-shadow: -5px 15px 135px 5px black;
+	display: block;
+
+  animation-name: blackbox;
+  animation-duration: 1.2s;
+  animation-delay: .2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blackbox {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+h1 {
+	padding-left: 85px;
+	font-family: lato;
+	text-transform: uppercase;
+	
+}
+
+.bbinfo {
+  display: block;
+  color: white;
+  font-family: lato;
+  margin: 20px;
+  opacity: 0;
+
+  animation-name: bbinfo;
+  animation-duration: 1.4s;
+  animation-delay: .6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes bbinfo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.gas {
+  		font-size: 100pt;
+  		letter-spacing: 115px;
+
+  	}
+
+  	.voight {
+  		font-size: 24pt;
+  		padding-bottom: 50px;
+  	}
+
+.tickets {
+  display: block;
+
+  margin-left: 90px;
+
+    width: 124px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 26px;
+    font-family: lato;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 26px;
+}
+
+.info {
+  display: none;
+}
+
+
+h2 {
+ 	display: none;
+}
+
+
+.whenwhere{
+  	display: none;
+ }
+
+ img {
+  		display: none;
+ }
+
+
+h3 {
+  	display: none; 
+}
+
+
+hr {
+	display: none;
+}
+   
+
+div {
+  	display: none;
+  }
+
+
+p {
+	display: none;
+}
+
+
+/* Wobble Vertical*/
+
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.tickets {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.tickets:hover, .tickets:focus, .tickets:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+
+@media(max-width: 750px) {  /* Any window smaller than this px width gets the following CSS rules */
+  /* Rules go here */
+  	
+
+
+
+.light-header {
+  word-spacing: 210px;
+  margin-top: -60px;
+}
+
+.subheader2 {
+  font-size: 15pt;
+  margin-top: -22px;
+}
+
+h5 {
+  margin-left: 70px;
+}
+
+  	.background-container {
+  		display: none;
+  	}
+
+	.blackbox {
+	display: none;
+	}
+
+.rule1 {
+  width: 3px;
+  height: 101px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 250px;
+  display:inline-block;
+
+  padding: 0px;
+  border: 0px;
+}
+
+.rule2 {
+  width: 3px;
+  height: 101px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 45px;
+  float: left;
+  display: block;
+  padding: 0px;
+  border: 0px;
+}
+
+	hr {
+	display: block;
+	}
+
+  	p {
+  		display: block;
+  		font-family: lato;
+  		text-transform: uppercase;
+  		line-height: 25px;
+  	}
+
+  	h1 {
+  		padding-left: 50px;
+  		text-transform: uppercase;
+  		font-family: lato;
+  	}
+
+  	.gas {
+  		font-size: 75px;
+  		letter-spacing: 70px;
+  		padding-bottom: 0px;
+      margin-top: 150px;
+  	}
+
+  	.voight {
+  		padding-bottom: 50px;
+  	}
+
+  	h2 {
+  		font-family: lato;
+  		text-transform: uppercase;
+  		font-size: 20pt;
+  		display: block;
+  	}
+
+  	.wordless {
+  		text-align: center;
+  		padding-bottom: 6px;
+  	}
+
+.tickets {
+  display: block;
+
+  margin: 0 auto;
+
+    width: 124px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 26px;
+    font-family: lato;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 26px;
+}
+  
+
+  	.hrone {
+  		width: 80%;
+  		margin-top: 100px;
+  		margin-bottom: 85px;
+  	}
+
+    .wherei {
+      padding-left: 50px;
+      padding-right: 160px;
+      text-align: right;
+      display: inline-block;
+    }
+
+    .wheni {
+      text-align: right;
+      display: inline-block;
+      padding-right: 20px;
+      }
+
+  	.quote {
+  		text-align: center;
+  		font-size: 15pt;
+  		padding: 0px 145px 75px 145px;
+  	}
+
+  	.hrtwo {
+      background-color: black;
+      height: 1px;
+      margin-right: 0px;
+  		width: 90%;
+      height: 1px;
+      padding: 0px;
+      border: 0px;
+  	}
+
+  	.info {
+  		padding: 10px 0px 20px 70px;
+      position: relative;
+      display: block;
+  	}
+
+    .info:after {
+      content: "WOLFGA";
+      font-size: 100pt;
+      position: absolute;
+      font-weight: bolder;
+      top: 227px;
+      left: -300px;
+      transform: rotate(90deg);
+    }
+
+  	.firstP {
+  		padding: 0px 70px 30px 70px;
+  	}
+
+  	.hrthree {
+  		background-color: black;
+      height: 1px;
+      margin-right: 0px;
+      width: 90%;
+      height: 1px;
+      padding: 0px;
+      border: 0px;
+  	}
+
+  	.whenwhere{
+  		word-spacing: 190px;
+  		padding-left: 70px;
+      padding-bottom: 20px;
+  		text-shadow: 10px 10px 95px black;
+  		display: block;
+  	}
+
+  	img {
+  		display: block;
+      padding-top: 35px;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 90%;
+  	}
+
+  	h3 {
+  		text-transform: uppercase;
+  		font-family: lato;
+  		padding: 35px 0px 0px 97px; 
+  		display: block;
+  		font-size: 25pt;
+  		line-height: 50px;
+  	}
+
+  	.hrfour {
+      background-color: black;
+  		width: 10%;
+  		height: 1px;
+      padding: 0px;
+      border: 0px;
+      margin-left: 97px;
+   	}
+
+  	.secondP {
+  		padding: 10px 70px 55px 97px;
+  	}
+
+  	div {
+  	margin: 0 auto;
+  	display: block;
+    width: 124px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 26px;
+    font-family: lato;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 26px;
+  	}
+
+  	.footerb {
+  		background-color: black;
+  		width: 100%;
+  		padding: 0px;
+  		height: 330px;
+  		margin-top: 80px;
+  	}
+
+  	.footert {
+  		color: white;
+  		font-size: 8pt;
+  		width: 90%;
+      padding-top: 40px;
+      margin: 0 auto;
+  	}
+}
+
+
+@media(max-width: 593px) {  /* Any window smaller than this px width gets the following CSS rules */
+  /* Rules go here */
+   
+.light-header {
+  word-spacing: 160px;
+  margin-top: -60px;
+  font-size: 9pt;
+}
+
+.subheader2 {
+  font-size: 12pt;
+  margin-top: -18px;
+}
+
+  
+
+
+p {
+      display: block;
+      font-family: lato;
+      text-transform: uppercase;
+      line-height: 16pt;
+      font-size: 8pt;
+
+    }
+
+.firstP {
+      padding: 0px 25px 30px 25px;
+    }
+
+.secondP {
+      padding: 10px 20px 55px 47px;
+    }
+
+.subtitle {
+  margin-left: -50px;
+}
+
+.hrfour {
+  margin-left: 48px;
+}
+
+.quote {
+  font-size: 15pt;
+  padding: 10px 40px 35px 40px;
+}
+
+.hrtwo {
+      margin-right: 0px;
+    }
+
+
+.info {
+      font-size: 20pt;
+      margin-left: 47px;
+    }
+
+    .info:after {
+      content: "WOLFGA";
+      font-size: 80pt;
+      top: 180px;
+    }
+
+.whenwhere {
+  word-spacing: 70px;
+}
+
+.wherei {
+  padding-right: 40px;
+  padding-left: 30px;
+}
+
+h3 {
+  padding: 35px 0px 0px 97px; 
+  font-size: 25pt;
+  line-height: 50px;
+  }
+
+
+  .rule1 {
+  margin-left: 190px;
+}
+
+.footert {
+  font-size: 6pt;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
