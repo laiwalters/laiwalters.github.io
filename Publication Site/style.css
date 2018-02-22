@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+	width: 90vw;
+	margin-left: 5vw;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 45pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 12pt;
+	line-height: 26px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+.pullquote {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	text-indent: 0px;
+	text-align: right;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+img {
+	width: 100%;
+}
+
+
+.practice {
+	background-color: red;
+	width: 56px;
+	height: 56px;
+	position: fixed;
+	display: inline-block;
+	bottom: 14px;
+	right: 16px;
+	border-radius: 50%;
+	box-shadow: 3px 6px 55px -5px black;
+}
