@@ -2,7 +2,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+html {
+	overflow-x: hidden;
+}
 
 body {
 	width: 80vw;
@@ -10,10 +12,10 @@ body {
 }
 
 h1 {
-	font-family: 'Playfair Display', serif;
-	font-size: 48pt;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 38pt;
 	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	margin-left: 0px;
 	color:#262626;
 }
@@ -62,32 +64,56 @@ img {
 
 
 .rule {
-	background-color: #FCE63C;
+	background-color: #FF971D;
 	margin-bottom: 14px;;
 	width: 110px;
-	height: 2px;
+	height: 3px;
 	margin-bottom: 25px;
 }
 
-.fullscreenimg {
-	width: 100vw;
-	margin-left: -10vw;
+#scroll {
+    position:fixed;
+    right:16px;
+    bottom:25px;
+    cursor:pointer;
+    width:56px;
+    height:56px;
+    background-color: white;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:50%;
+    -moz-border-radius: 50%;
+    border-radius:50%;
+    box-shadow: 3px 10px 60px -15px black;
+    z-index: 1;
+    transition: all .6s ease;
 }
 
-.practice {
-	background-color: white;
-	width: 56px;
-	height: 56px;
-	position: fixed;
-	display: inline-block;
-	bottom: 25px;
-	right: 16px;
-	z-index: 1;
-	border-radius: 50%;
-	box-shadow: 3px 10px 60px -15px black;
+
+/* Arrow Within button */
+
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color: grey;
 }
 
 
+
+#scroll:hover {
+    background-color:#FF971D;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+/*Orginal Next location CSS Style*/
+/*
 .nextpost {
 	width: 100vw;
 	height: 250px;
@@ -99,7 +125,8 @@ img {
 	text-align: center;
 	line-height: 250px;
 	text-transform: uppercase;
-	font-family: serif;
+	text-decoration: none;
+	font-family: sans-serif;
 	transition: all .5s ease;
 
 	-webkit-filter: blur(0);
@@ -111,9 +138,246 @@ img {
 	 -webkit-filter: blur(1px);
   filter: blur(1px);	
 
+}*/
+
+.nxtlocal {
+     width:100vw;
+     margin-left: -10vw;
+     height:250px;
+		padding: 0;
+		text-align: center;
+	}
+
+	.nxtlocal-image{
+cursor:pointer;
+		position: relative;
+		display: block;
+		height: 250px;
+	}
+
+	.nxtlocal-text{
+	    position: absolute;
+	    top: 0; right: 0;
+	    bottom: 0; left: 0;
+	    width: 100%;
+	    height: 100%; 
+	    text-align: center;
+	    background-color: rgba(0,0,0,0.8);
+	    opacity: 0;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:250px;
+	}
+
+	.nxtlocal-text:hover{
+	    opacity: 1;      
+	}
+
+	.nxtlocal-text h4{
+	    color: white;
+	    font-size: 15pt;
+	    display: inline-table;
+       vertical-align:middle;
+       line-height:100%            
+	}
+.imgfix {
+	height: 250px;
+	margin-bottom: -28px;
 }
 
-/*San Juan Specifc*/
+
+.DominicanR {
+	background-image: url("DominicanR IMG 04.jpg");
+}
+
+.Barbados {
+	background-image: url("Barbados IMG 03.jpg");
+}
+
+
+.Jamaica {
+	background-image: url("Jamaica IMG 04.jpg");
+}
+
+
+.Sanjuan {
+	background-image: url("PuertoR IMG 02.jpg");
+}
+
+.Bahamas {
+	background-image: url("Bahamas IMG 02.jpg");
+}
+
+
+
+.top-section {
+  width: 100vw;
+  margin-left: -10vw;
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 20px;
+}
+
+/*HomePagec*/
+a {
+	text-decoration: none;
+}
+
+.home {
+	background-color: #F5F5F5;
+}
+
+.imginfo {
+	width: 100%;
+}
+
+.info {
+	background-color: white;
+	margin-bottom: 25px;
+	transition: all .8s ease;
+}
+
+.effect1{
+    -webkit-box-shadow: 4px 8px 25px -15px #777;
+       -moz-box-shadow: 4px 8px 25px -15px #777;
+            box-shadow: 4px 8px 25px -15px #777;
+}
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  
+
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #FF971D;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  transition: all .8s ease;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+.name {
+	text-indent: 16px;
+	color: #595959;
+	padding-bottom: 35px;
+	font-size: 18pt;
+	height: 32px;
+	line-height: 65px;
+	border-right: 1px solid #595959;
+	display: inline-block;
+	padding-right: 15px;
+	margin-top: -20px;
+}
+
+.why {
+	text-align: center;
+	text-indent: 0px;
+	margin-top: 65px;
+	margin-bottom: 5px;
+	font-size: 30pt;
+}
+
+.ruleone {
+	background-color: #707070;
+	height: 1px;
+	width: 30px;
+	margin: 0 auto;
+
+}
+
+.bodycopy {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.def {
+	opacity: .38;
+	margin-top: -20px;
+}
+
+.def2 {
+	margin-top: 35px;
+	margin-bottom: 50px;
+	font-family: 'Playfair Display', serif;
+	font-size: 37px;
+	color: black;
+	line-height: 55px;
+	text-indent: 0px;
+}
+
+.number {
+	padding-left: 15px;
+	color: #595959;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
+	opacity: .5;
+}
+
+
+@media(min-width:550px) {
+	body{
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.top-section {
+  	width: 100vw;
+  	margin-left: -10vw;
+  	height: 60vh;
+	}
+
+	.nxtlocal {
+	height: 320px;
+	width: 100vw;
+	
+	}
+
+	.nxtlocal-image {
+		height: 400px;
+	}
+
+	.nxtlocal-text {
+		height:400px;
+		line-height: 400px;
+
+	}
+
+	.imgfix {
+		height: 400px;
+	}
+
+}
+
+
+
 /*Jamaica Specifc*/
 /*Jamaica Specifc*/
 /*Jamaica Specifc*/
