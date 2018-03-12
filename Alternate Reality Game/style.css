@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+	overflow-x: hidden;
+	background-color: #1D1D1D;
+}
+
+body {
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+h1 {
+	font-family: 'Space Mono', monospace;
+	margin-top: 40px;
+	font-size: 75px;
+	margin-bottom: 100px;
+	color: white;
+}
+
+h2 {
+	font-family: 'Space Mono', monospace;
+	font-size: 22px;
+	margin-bottom: 5px;
+	margin-top: 65px;
+	color: white;
+}
+
+
+h3 {
+	font-family: 'Space Mono', monospace;
+	font-size: 22px;
+	margin-bottom: 5px;
+	color: #10F7B2;
+}
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: white;
+	padding-left: 25px;
+}
+
+.rule {
+	background-color: #10F7B2;
+	width: 25px;
+	height: 4px;
+	margin-bottom: 30px;
+
+
+}
+
+img {
+	margin-bottom: 40px;
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+	color: #001EFF;
+	font-size: 15px;
+}
+
+.footer {
+	margin-bottom: 50px;
+	color: white;
+}
+
+
+.Discussionquestion {
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	font-size: 30px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+
+}
+
+li {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+
+
+
+
