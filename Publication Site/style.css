@@ -350,13 +350,14 @@ a {
 
 	.top-section {
   	width: 100vw;
-  	margin-left: -10vw;
   	height: 60vh;
+	margin-left: calc(-1 * (50vw - 250px));
 	}
 
 	.nxtlocal {
 	height: 320px;
 	width: 100vw;
+	margin-left: calc(-1 * (50vw - 250px));
 	
 	}
 
@@ -373,6 +374,9 @@ a {
 	.imgfix {
 		height: 400px;
 	}
+	
+
+
 
 }
 
