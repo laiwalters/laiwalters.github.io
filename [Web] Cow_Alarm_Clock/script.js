@@ -7,9 +7,9 @@ $(document).ready(function() {
   document.getElementById("myVideo").play();
 }, 0);
         setTimeout(function(){
-        	$("audio").get(0).play();
+        	$("#onemoo").get(0).play();
         	  setInterval(function(){
-        	$("audio").get(0).play();
+        	$("#onemoo").get(0).play();
         		}, 10000);
         },5500);
       
@@ -19,6 +19,8 @@ $(document).ready(function() {
   			count=count+1;
   			
 }, 10000);
+
+	//  Alarm state
 
           setTimeout(function(){
   	  $(".ufo").addClass("ufoblue");
@@ -31,12 +33,12 @@ $(document).ready(function() {
               $(".cowalert").addClass("infinitealert");
               $(".cow").removeClass("cow");
 
-             // setTimeout(function(){
-         // $("audio").get(0).play();
-          //  setInterval(function(){
-         // $("audio").get(0).play();
-          //  }, 10000);
-        //},5000);
+              setTimeout(function(){
+          $("#multimoo").get(0).play();
+            setInterval(function(){
+          $("#multimoo").get(0).play();
+            }, 1000);
+        },5000);
 
                    setTimeout(function(){
         document.getElementById("myVideo2").play();
@@ -47,6 +49,7 @@ $(document).ready(function() {
   }, 30000);
 
 
+//  Reset State
 
   $(".Cowcounter").click(function() {
   	$(".batterydoublecharge").addClass("battery");
