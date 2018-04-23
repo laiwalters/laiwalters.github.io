@@ -52,14 +52,16 @@ $(document).ready(function() {
 //  Reset State
 
   $(".Cowcounter").click(function() {
-  	$(".batterydoublecharge").addClass("battery");
-      $(".battery").removeClass("batterydoublecharge");
-       $(".tractorbeam").removeClass("tractorbeamalert");
-          $(".innertractorbeam").removeClass("innertractorbeamalert");
-            $(".ufo").removeClass("ufoblue");
-              $(".cow1").addClass("cow");
-                $(".cowalert").removeClass("infinitealert");
-                 $(".background-container2").css("opacity", "0");
+  	location.reload()
+  	// $(".batterydoublecharge").addClass("battery");
+   //    $(".battery").removeClass("batterydoublecharge");
+   //     $(".tractorbeam").removeClass("tractorbeamalert");
+   //        $(".innertractorbeam").removeClass("innertractorbeamalert");
+   //          $(".ufo").removeClass("ufoblue");
+   //            $(".cow1").addClass("cow");
+   //              $(".cowalert").removeClass("infinitealert");
+   //               $(".background-container2").css("opacity", "0");
+   //               	$("#multimoo").get(0).play("muted", true);
   })
 
 
